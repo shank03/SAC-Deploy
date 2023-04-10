@@ -1,0 +1,12 @@
+.home__main {
+    background-image: url('../assets/academic-building.jpg');
+}
+
+.home__img-div {
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+#to-top-button {
+    justify-content: center;
+    align-items: center;
+}

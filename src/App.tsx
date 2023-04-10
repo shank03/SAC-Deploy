@@ -7,6 +7,7 @@ import Clubs from './pages/Clubs';
 import Events from './pages/Events';
 import Achievements from './pages/Achievements';
 import Team from './pages/Team';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
                 <Route path="/achievements" element={<Achievements />} />
                 <Route path="/team" element={<Team />} />
             </Routes>
+
+            <Footer />
         </div>
     );
 }
