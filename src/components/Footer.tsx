@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 import mnnit from '../assets/mnnit_logo.jpg'
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <div>
             <button id="to-top-button" title="Go To Top" className="hidden fixed z-50 bottom-8 right-8 border-0 w-12 h-12 animate-bounce rounded-full drop-shadow-md bg-zinc-900 text-white text-2xl font-bold">
