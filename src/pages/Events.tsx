@@ -4,7 +4,7 @@ import { posts } from '../models/posts'
 const Events: React.FC = () => {
     return (
         <div>
-            <section className="mt-24">
+            <section className="mt-8">
                 <div className="d-flex text-center pt-0 text-3xl font-weight-900">
                     <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">Events</h2>
                     <hr className="w-28 h-1 mx-auto my-2 bg-red-700 border-0 rounded" />

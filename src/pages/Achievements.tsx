@@ -3,7 +3,7 @@ import { achievementsGroup } from '../models/achievement'
 
 const Achievements: React.FC = () => {
     return (
-        <div className="container max-w-4xl p-2 mx-auto mt-24">
+        <div className="container max-w-4xl p-2 mx-auto mt-6">
             {
                 achievementsGroup.map((group) => (
                     <div>
