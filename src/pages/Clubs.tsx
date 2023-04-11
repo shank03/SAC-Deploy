@@ -3,10 +3,10 @@ import { clubsInfo } from '../models/clubs'
 
 const Clubs: React.FC = () => {
     return (
-        <div>
+        <div className='mt-12'>
             {
                 clubsInfo.map((category) => (
-                    <div className="py-12 mt-12">
+                    <div className="py-12">
                         <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                             <div className="mb-12 space-y-2 text-center">
                                 <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">{category.name}</h2>
