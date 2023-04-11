@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
                     </div>
 
                     <div>
-                        <a href="#" className="inline-block text-sm px-4 py-2 leading-none font-medium border border-white rounded hover:border-transparent hover:bg-white hover:text-black mt-4 lg:mt-0 hover:animate-pulse">Admin Login</a>
+                        <a href="/" className="inline-block text-sm px-4 py-2 leading-none font-medium border border-white rounded hover:border-transparent hover:bg-white hover:text-black mt-4 lg:mt-0 hover:animate-pulse">Admin Login</a>
                     </div>
                 </div>
             </nav>

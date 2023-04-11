@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css'
 import { images } from '../images'
+import { Link } from 'react-router-dom'
 
 const Footer: React.FC = () => {
     return (
@@ -14,12 +15,12 @@ const Footer: React.FC = () => {
             <footer className="px-4 divide-y bg-zinc-900 text-gray-100">
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
-                        <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
+                        <Link to='/' className="flex justify-center space-x-3 lg:justify-start">
                             <div className="flex items-center justify-center w-16 h-16 rounded-full">
                                 <img className="" src={images.mnnit_logo} alt="MNNIT" />
                             </div>
                             <span className="self-center text-2xl font-semibold">SAC MNNIT</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                         <div className="space-y-3">
@@ -43,13 +44,13 @@ const Footer: React.FC = () => {
                             <h3 className="tracking-wide uppercase text-gray-50">Events</h3>
                             <ul className="space-y-1">
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Avishkar</a>
+                                    <a rel="noopener noreferrer" href="/">Avishkar</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Clurav</a>
+                                    <a rel="noopener noreferrer" href="/">Clurav</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Annual Athletic Meet</a>
+                                    <a rel="noopener noreferrer" href="/">Annual Athletic Meet</a>
                                 </li>
                             </ul>
                         </div>
@@ -57,10 +58,10 @@ const Footer: React.FC = () => {
                             <h3 className="uppercase text-gray-50">Contact Us</h3>
                             <ul className="space-y-1">
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">S.A.C. Office and Boys’ SAC</a>
+                                    <a rel="noopener noreferrer" href="/">S.A.C. Office and Boys’ SAC</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#">Gymkhana and Girls’ SAC</a>
+                                    <a rel="noopener noreferrer" href="/">Gymkhana and Girls’ SAC</a>
                                 </li>
                             </ul>
                         </div>
