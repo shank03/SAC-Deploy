@@ -6,7 +6,7 @@ const Clubs: React.FC = () => {
         <div className='mt-8 mb-16'>
             {
                 clubsInfo.map((category) => (
-                    <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+                    <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-6 mt-12">
                         <div className="mb-12 space-y-2 text-center">
                             <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">{category.name}</h2>
                             <hr className="w-28 h-1 mx-auto my-2 bg-red-700 border-0 rounded" />
