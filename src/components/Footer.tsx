@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import mnnit from '../assets/mnnit_logo.jpg'
+import { images } from '../images'
 
 const Footer: React.FC = () => {
     return (
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                     <div className="lg:w-1/3">
                         <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
                             <div className="flex items-center justify-center w-16 h-16 rounded-full">
-                                <img className="" src={mnnit} alt="MNNIT" />
+                                <img className="" src={images.mnnit_logo} alt="MNNIT" />
                             </div>
                             <span className="self-center text-2xl font-semibold">SAC MNNIT</span>
                         </a>

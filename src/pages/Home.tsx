@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import aks from '../assets/aks.jpeg'
+import { images } from '../images'
 
 const Home: React.FC = () => {
     return (
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
 
             <div className="flex m-8">
                 <div className="flex flex-col rounded-lg bg-zinc-900 shadow-lg md:max-w md:flex-row">
-                    <img className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={aks} alt="" />
+                    <img className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={images.aks} alt="" />
                     <div className="flex flex-col justify-start p-6">
                         <h5 className="mb-2 text-xl font-medium text-neutral-50">
                             From the President's Desk
