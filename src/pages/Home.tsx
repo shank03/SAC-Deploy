@@ -44,7 +44,7 @@ const Home: React.FC = () => {
                 <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed home__img-div">
                     <div className="maintitle flex justify-center items-center h-full">
                         <div className="text-white">
-                            <h2 className="font-semibold text-6xl mb-6">Student Activity Club</h2>
+                            <h2 className="font-semibold text-6xl mb-6">Student Activity Center</h2>
                             <h4 className="font-semibold text-4xl mb-20">MNNIT Allahabad</h4>
                         </div>
                     </div>
