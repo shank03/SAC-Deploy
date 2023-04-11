@@ -4,13 +4,13 @@ import { achievementsGroup } from '../models/achievement'
 const Achievements: React.FC = () => {
     return (
         <div>
-            <section className="achievement text-center mt-20">
+            <section className="achievement text-center mt-24">
                 {
                     achievementsGroup.map((group) => (
                         <div>
                             <div className="d-flex justify-content-center pt-0 text-3xl font-weight-900">
-                                <h2>
-                                    <span className="font-bold text-2xl md:text-2xl tracking-tight">{group.year}</span>
+                                <h2 className="text-3xl font-bold text-gray-800 md:text-4xl tracking-tight">
+                                    {group.year}
                                 </h2>
                                 <hr className="w-28 h-1 mx-auto my-2 bg-red-700 border-0 rounded" />
                             </div>
@@ -44,7 +44,7 @@ const Achievements: React.FC = () => {
                                                                                     target="_blank"
                                                                                     className="text-red-700 hover:text-red-800 focus:text-blue-800 duration-300 transition ease-in-out"
                                                                                 >
-                                                                                    {member.name} {index != team.members.length - 1 ? '- ' : ''}
+                                                                                    {member.name} {index !== team.members.length - 1 ? '- ' : ''}
                                                                                 </a>
                                                                             ))
                                                                         }

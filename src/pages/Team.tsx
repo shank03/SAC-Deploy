@@ -3,12 +3,12 @@ import { teamMembers } from '../models/team'
 
 const Team: React.FC = () => {
     return (
-        <div className="container mx-auto mt-20">
+        <div className="container mx-auto mt-4">
             <div className="py-20">
                 <div className="container mx-auto px-6 md:px-12">
                     <div className="mb-16">
-                        <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:text-4xl">
-                            TEAM
+                        <h2 className="text-3xl text-center font-bold text-gray-800 md:text-4xl">
+                            Team
                         </h2>
                         <hr className="w-28 h-1 mx-auto my-2 bg-red-700 border-0 rounded" />
                     </div>
