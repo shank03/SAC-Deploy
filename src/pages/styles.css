@@ -1,3 +1,17 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.maintitle {
+    animation: fadeIn 1s;
+}
+
 .home__main {
     background-image: url('../assets/academic-building.jpg');
 }
