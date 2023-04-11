@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import { images } from '../images'
+import { images } from '../models/images'
 
 const Home: React.FC = () => {
     return (

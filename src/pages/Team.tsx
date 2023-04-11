@@ -1,37 +1,7 @@
 import React from 'react'
-
-interface Member {
-    name: string
-    meta: string
-    profilePic: string
-    github?: string
-    twitter?: string
-    linkedin?: string
-}
+import { teamMembers } from '../models/team'
 
 const Team: React.FC = () => {
-
-    const teamInfo: Member[] = [
-        {
-            name: 'Shashank Verma',
-            meta: 'CSE, Pre-final year',
-            profilePic: 'https://github.com/shank03.png',
-            github: 'https://github.com/shank03'
-        },
-        {
-            name: 'Prakhar Agarwal',
-            meta: 'MECH, Pre-final year',
-            profilePic: 'https://github.com/prackode.png',
-            github: 'https://github.com/prackode'
-        },
-        {
-            name: 'Ashutosh Suthar',
-            meta: 'ECE, Pre-final year',
-            profilePic: 'https://github.com/ashutoshsuthar2020.png',
-            github: 'https://github.com/ashutoshsuthar2020'
-        }
-    ];
-
     return (
         <div className="container mx-auto mt-20">
             <div className="py-20">
@@ -44,7 +14,7 @@ const Team: React.FC = () => {
                     </div>
                     <div className="grid gap-12 md:grid-cols-3">
                         {
-                            teamInfo.map((member) => (
+                            teamMembers.map((member) => (
                                 <div className="space-y-6 text-center">
                                     <img className="mx-auto h-64 w-64 rounded-full object-cover md:h-40 md:w-40 lg:h-64 lg:w-64" src={member.profilePic} alt={member.name} loading="lazy" width="640" height="805" />
                                     <div>
