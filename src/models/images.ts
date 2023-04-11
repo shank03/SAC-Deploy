@@ -10,6 +10,8 @@ import cc from '../assets/cc.jpg'
 import chess from '../assets/chess.jpg'
 import cricket from '../assets/cricket.jpg'
 import culrav from '../assets/culrav.jpg'
+import drams from '../assets/drams.jpg'
+import ecell from '../assets/ecell.jpg'
 import football from '../assets/football.jpg'
 import kabaddi from '../assets/kabaddi.jpg'
 import lawn_tennis from '../assets/lawn_tennis.jpg'
@@ -35,6 +37,8 @@ export const images = {
     chess,
     cricket,
     culrav,
+    drams,
+    ecell,
     football,
     kabaddi,
     lawn_tennis,
