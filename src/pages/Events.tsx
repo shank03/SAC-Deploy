@@ -1,5 +1,6 @@
 import React from 'react'
 import { posts } from '../models/posts'
+import { Link } from 'react-router-dom'
 
 const Events: React.FC = () => {
     return (
@@ -11,7 +12,7 @@ const Events: React.FC = () => {
                 </div>
 
                 <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 mt-4">
-                    <a rel="noopener noreferrer" href="/" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12">
+                    <Link rel="noopener noreferrer" to="/events/0" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12">
                         <img src={posts[0].image} alt="" className="object-cover w-full h-96 rounded sm:h-96 lg:col-span-7" />
                         <div className="p-6 space-y-2 lg:col-span-5">
                             <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">{posts[0].title}</h3>
@@ -24,12 +25,12 @@ const Events: React.FC = () => {
                                 }
                             </p>
                         </div>
-                    </a>
+                    </Link>
 
                     <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             posts.filter((post, index, it) => index !== 0).map((post, index) => (
-                                <a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline">
+                                <Link rel="noopener noreferrer" to={`/events/${index + 1}`} className="max-w-sm mx-auto group hover:no-underline focus:no-underline">
                                     <img role="presentation" className="object-cover w-full rounded h-1/2" src={post.image} alt='post_img' />
                                     <div className="p-6 space-y-2">
                                         <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">{post.title}</h3>
@@ -42,7 +43,7 @@ const Events: React.FC = () => {
                                             }
                                         </p>
                                     </div>
-                                </a>
+                                </Link>
                             ))
                         }
                     </div>
